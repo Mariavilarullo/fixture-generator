@@ -1,0 +1,20 @@
+ * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+ }
+ .navbar{
+ background-color: black;
+
+ }
+  .navbar  li:hover {
+ background-color: gray;
+ }
+.navbar  li {
+ background-color: black;
+     padding-top: 10px;
+    padding-bottom: 5px
+ }
+ .navbar-header{
+    padding-top: 5px;
+    padding-bottom: 5px
+}

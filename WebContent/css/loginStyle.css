@@ -1,0 +1,158 @@
+
+#bootstrap-overrides {
+	background-color: white;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+}
+
+h1{
+	color: grey;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align:center;
+}
+
+h2{
+	color: grey;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align:center;
+}
+h3{
+	color: grey;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	text-align:center;
+}
+#newgame{
+	background-color: black;
+    color: grey;
+    border: 2px solid grey;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+}
+button:hover {
+    background-color: grey;
+    color: black;
+}
+button {
+background-color: yellow;
+    color: grey;
+    border: 2px solid grey;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px 32px;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    background-color: white;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+input[type=password]{
+    width: 100%;
+    background-color: white;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+input[type=email]{
+    width: 100%;
+    background-color: white;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+select{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+.container {
+	width: 500px;
+    border-radius: 25px;
+    border: 2px solid grey;
+    background-color: white;
+    padding: 50px;
+    margin:auto;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.menu-container {
+
+    overflow-y: auto;
+    width: 500px;
+    border-radius: 25px;
+    background-color: black;
+    padding: auto;
+    margin:auto;
+}
+
+.button-container > a {
+    width: 130px;
+    height: 130px;
+    float: left;
+    background: lightgray;   
+    margin: 15px;
+}
+#formbutton
+{
+	background-color: yellow;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}

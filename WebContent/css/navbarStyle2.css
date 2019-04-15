@@ -1,0 +1,32 @@
+ 
+ul {
+    background-color: black;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#logo{
+	color:#7C4278;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 40px;
+	text-align:left;
+}
+img{
+	display: block;
+    margin-left: 8px;
+    margin-right: 8px;
+   	margin-top: 4px;
+   	margin-bottom: 4px;
+    width: 50%;
+    
+}

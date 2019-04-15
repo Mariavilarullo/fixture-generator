@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ar.edu.uces.progweb2.springmvc.model.Sede" table="SEDES">
+		<id column="ID_SEDE" name="id">
+			<generator class="native" />
+		</id>
+		<property column="NOMBRE" name="nombre" />
+		<set name="canchas" inverse="true"  lazy="false">
+        	<key column="id_sede"/>
+        	<one-to-many class="ar.edu.uces.progweb2.springmvc.model.Cancha"/>
+    	</set>
+	</class>
+</hibernate-mapping>

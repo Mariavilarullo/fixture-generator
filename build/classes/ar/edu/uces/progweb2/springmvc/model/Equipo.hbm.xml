@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ar.edu.uces.progweb2.springmvc.model.Equipo" table="EQUIPOS">
+		<id column="ID_EQUIPO" name="id">
+			<generator class="native" />
+		</id>
+		
+		<discriminator column="TIPO" type="string"/>
+		<property column="TIPO" name="tipo" insert="false" update="false"/>		
+		<property column="NOMBRE" name="nombre" />
+		<property column="FOTO" name="foto" />
+		<property column="HISTORIA" name="historia" />
+		
+		<subclass name="ar.edu.uces.progweb2.springmvc.model.EquipoAmateur" discriminator-value="AMA">
+	        <property column="CATEGORIA" name="categoria" />
+    	</subclass>
+    		
+    	<subclass name="ar.edu.uces.progweb2.springmvc.model.EquipoUniversitario" discriminator-value="UNI">
+	        <property column="DT" name="dt" />
+    	</subclass>
+	</class>
+</hibernate-mapping>

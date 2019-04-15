@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="ar.edu.uces.progweb2.springmvc.model.Partido" table="PARTIDOS">
+		<id column="ID_PARTIDO" name="id">
+			<generator class="native" />
+		</id>
+		<many-to-one name="cancha" column="ID_CANCHA" lazy="false"/>
+		<property column="ORDEN" name="orden" />
+		<many-to-one name="equipo1" column="ID_EQUIPO1" lazy="false" />
+		<many-to-one name="equipo2" column="ID_EQUIPO2" lazy="false" />
+		<property column="JUGADO" name="jugado" />
+	</class>
+</hibernate-mapping>
